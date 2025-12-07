@@ -1,0 +1,40 @@
+name: game_of_guss
+description: "لعبة تخمين الرقم"
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  audioplayers: ^6.1.0         # 🔊 لتشغيل الأصوات
+  confetti: ^0.7.0             # 🎉 تأثير الألعاب النارية عند الفوز
+  shared_preferences: ^2.1.1   # 💾 لحفظ الإحصائيات
+  lottie: ^2.2.0               # 🎬 لتشغيل الأنيميشن
+  video_player: ^2.6.0         # 🎬 لتشغيل الفيديو في Splash Page
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.11.0  # 🖼️ لتعيين أيقونة التطبيق
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/appstore.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/sounds/correct-answer.mp3
+    - assets/sounds/wrong-answer.mp3
+    - assets/sounds/fanfare.mp3
+    - assets/sounds/background_music.mp3
+    - assets/animations/
